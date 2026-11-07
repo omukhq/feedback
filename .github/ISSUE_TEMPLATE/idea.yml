@@ -1,0 +1,28 @@
+name: Idea
+description: Suggest a feature, or a new app.
+title: "[Idea] "
+labels: [idea]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - airshot (Mac)
+        - Flume (Mac)
+        - AirBridge (Mac)
+        - AirBridge (Android)
+        - Klipboard (Mac)
+        - PostVault (Android)
+        - Gallery (Android)
+        - Something else
+        - A new app
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do?
+      description: The problem first. A solution is welcome, but not needed.
+    validations:
+      required: true
